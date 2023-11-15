@@ -1,0 +1,88 @@
+body {
+    margin-bottom: 0px;
+    padding: 0px;
+    /* background: url(../foto/Food-Wallpapers-HD-For-Desktop.jpg); */
+    background: url(../poto/thumb-1920-1093443.jpg);
+
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.login-box {
+    width: 380px;
+    height: 480px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 70px;
+    transform: translate(-50%, -50%);
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
+
+h1 {
+    margin-top: 0px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login-box p {
+    margin-bottom: 0px;
+    padding: 0px;
+    font-weight: bold;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-box input[type="text"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-box button {
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    background: #1c8adb;
+}
+
+.login-box button:hover {
+    cursor: pointer;
+    background: #E33d56;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}

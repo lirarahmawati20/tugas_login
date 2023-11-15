@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylelogin.css">
+    <link rel="shortcut icon" href="#">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-box">
+        <img src="../poto/pngtree-chef-food-png-image_5606791.jpg" class="avatar">
+        <h1>Login Here</h1>
+    <form name="login" display: flex;
+    flex-direction: column;
+    gap: 10px; >
+
+    <label for="login" >username</label>
+    <input name ="username" type="text"  placeholder="masukan nama dsini">
+    <label for="login">password</label>
+    <input name="password" type="password" placeholder="password">
+    <button id="submit">Login</button>
+    </form>
+    </div>
+</body>
+
+<script>
+        document.querySelector("button").onclick = async (e) => {
+          e.preventDefault();
+          const username = document.login.username.value;
+          const password = document.login.password.value;
+          await fetch("/api/daftar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+              },
+            body: JSON.stringify({
+              username,
+              password,
+            }),
+          });
+          alert("Akun Anda Sudah Terdaftar.");
+          location.href = "index.html";
+        };
+      </script>
+
